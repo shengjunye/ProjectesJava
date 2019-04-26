@@ -1,4 +1,5 @@
 package Metodes;
+
 //Desenvolupar un programa per tal de demanar un conjunt de n�meros pel teclat, finalitzant la 
 //s�rie amb el 0. Una vegada tots els n�meros introdu�ts caldr� dir per a cada n�mero quin �s el seu factorial.
 //Caldr� desenvolupar els seg�ent m�todes

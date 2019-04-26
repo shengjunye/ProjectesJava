@@ -2,7 +2,7 @@ package Projectes;
 
 public class Jocdelavida {
 
-	private static final int  TAMANY = 5; //TAMANY DE TAULA
+	private static final int  TAMANY = 10; //TAMANY DE TAULA
 	private static boolean[][] taula = new boolean[TAMANY][TAMANY];//CREACIÓ DE LA TAULA
 	
     public static void main(String[] args) {
@@ -12,12 +12,18 @@ public class Jocdelavida {
   
 	}
 	
-    private void iniciar() {
+    private void iniciar()  {
     	System.out.println("EL JOC DE LA VIDA");
     	//joc.omplirtaula();//Omplo la taula amb tots els valors a false
     	Jocdelavida.generarcela();//Genero celes vivas aleatoriament
     	
-    	for(int i = 1; i <= 10; i++) {
+    	for(int i = 1; i <= 50; i++) {
+    		try {
+				Thread.sleep(825);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
     		System.out.println("Generació: " + i);
     		Jocdelavida.imprimir();//Imprimeixo la taula
     		Jocdelavida.novaGen();//Actualitzo la taula per a veure la següent gen
